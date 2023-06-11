@@ -1,0 +1,253 @@
+@import "./font.css";
+
+:root {
+    --RL: "Rubik-Light";
+    --RR: "Rubik-Regular";
+    --RSB: "Rubik-SemiBold";
+    --white: #fff;
+    --black: #000;
+    --bg: #181D28;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.nav_container {
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav_link {
+    display: block;
+    font-family: var(--RR);
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--black);
+    padding: 30px 0;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+
+.nav_link:hover {
+    border-color: var(--black);
+}
+
+.nav_form {
+    display: flex;
+    border: 1px solid #000;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+
+.nav_form input {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-family: var(--RR);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+.nav_form input:first-child {
+    width: 70%;
+    color: var(--black);
+}
+
+.nav_form input:last-child {
+    width: 30%;
+    color: var(--white);
+    background-color: #000;
+}
+
+/* //////////intro start//////////////////// */
+
+.intro_top {
+    background: url(../img/intro\ bg.jpg) no-repeat center/cover;
+    padding: 330px 0;
+    text-align: center;
+
+}
+
+.intro_img {
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+.intro_tittle {
+    font-family: var(--RR);
+    font-weight: 600;
+    font-size: 59px;
+    line-height: 70px;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.intro_subtittle {
+    font-family: var(--RR);
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.intro_bottom {
+    display: flex;
+}
+
+.intro_bottom-card {
+    background: #181D28;
+    padding: 20px 0;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    transition: 5;
+}
+
+.intro_bottom-card:hover {
+    background: #0ec5c5;
+}
+
+.intro_bottom-card>h6 {
+    font-family: var(--RSB);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--white);
+}
+
+.info_title {
+    font-family: var(--RSB);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--black);
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.info_text {
+    font-family: var(--RR);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--black);
+}
+
+.info_img {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.categories-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.categories_title {
+    font-family: var(--RSB);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--black);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.categories_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.categories_list{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 14px;
+}
+.categories_link{
+    font-family: var(--RR);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--black);
+    transition: .5s;
+}
+.categories_link:hover{
+    color: #0ec5c5;
+}
+
+/* ///////////FOOTER ///////////*/
+
+.end_container{
+    max-width: 1800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.end{
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+.logo_png{
+    padding: 10px;
+}
+.cover{
+    display: flex;
+    gap: 25px;
+    margin: 20px;
+}
+.list{
+    font-family: var(--RR);
+    color: var(--white);
+    transition: 1s;
+}
+.list:hover{
+    color: #0ec5c5;
+}
